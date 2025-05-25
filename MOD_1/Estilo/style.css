@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Voltei para refazer algumas configuracoes basicas, mas sem afectar a ideia principal*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+header h1{
+    height: 2em;
+    padding-top: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: lightblue;
+    background-color: rgba(255, 112, 60, 0.703);
+}
+main{
+    max-width: 820px;
+    margin: auto;
+}
+main 
+h1,
+h2{
+    text-align: center;
+    margin: 30px 0;
+    color:rgba(172, 75, 41, 0.834);
+    font-size: 1.9rem;
+}
+p{
+    text-align: justify;
+    text-indent: 16px;
+    line-height: 1.5em;
+    padding: 20px;
+}
+img,
+audio{
+display: block;
+margin:auto;
+max-width: 100%;
+}
+
+
+footer{
+    margin-top: 1em;
+    background-color: lightgray;
+}
+footer p{
+    text-align: center;
+}
+footer abbr{
+    text-decoration: none;
+}
+

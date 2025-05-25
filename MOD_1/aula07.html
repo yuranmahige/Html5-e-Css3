@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagens adaptaveis & Audio</title>
+</head>
+<body>
+    <header>
+        <h1> Adapatacao da imagem em diferentes tamanhos de tela</h1>
+    </header>
+        <main>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium recusandae minima, consequatur voluptas nobis omnis, enim, quis expedita alias aliquid ea eius laborum veritatis assumenda magni. Assumenda vel sequi soluta! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente ipsa similique odio, obcaecati quibusdam ullam, nemo totam accusamus ea id esse, quae necessitatibus provident dolorum cumque neque ducimus perferendis.
+            </p>
+                <section>
+                    <picture>
+                        <source media="(max-width:610px)" srcset="Arquivos/Imagens/imagem-p00.jpeg" type="image/jpeg">
+                        <source media="(max-width: 1020px )" srcset="Arquivos/Imagens/imagem-M.jpeg" type="image/jpeg">
+                        <img src="Arquivos/Imagens/imagem-G.jpeg" alt="Modelo Femenina Negra">
+                    </picture>
+                                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil voluptates placeat nulla voluptatibus aliquam esse.
+                                </p>
+                </section>
+            <section>
+                <audio preload="metadata" controls autoplay>
+                    <source src="Arquivos/Audio/Plutonio  Somos Iguais (Prod. Dj Dadda)- .mp3" type="audio/mpeg">
+                    <source src="Arquivos/Audio/Plutonio  Somos Iguais (Prod. Dj Dadda) -.m4a" type="audio/m4a">
+                    <p>
+                       [ERRO] - O seu navegador nao e compativel com o audio
+                        <a href="Arquivos/Audio/Plutonio  Somos Iguais (Prod. Dj Dadda) -.m4a" download="" type="audio/m4a">Baixar audio</a>
+                    </p>
+                </audio>
+            </section>
+        </main>
+</body>
+</html>

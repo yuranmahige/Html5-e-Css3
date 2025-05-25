@@ -1,0 +1,4 @@
+https://youtu.be/2IV08sP9m3U?si=G9Ba7NaiqFh4R0Y8
+
+a calc() function is actually not necessary in min(), max() and clamp() because they have calculation integrated.
+clamp(1.8rem, 7vw + 1rem, 5rem) will work like a charm. 😊

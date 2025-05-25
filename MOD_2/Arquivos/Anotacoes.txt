@@ -1,0 +1,9 @@
+Paletas de cores 
+
+COLOR ADOBE - e da para pegar cores de uma imagem e navegador por paletas ja geradas;
+PALETTON - da para ver como as cores ficaram no site
+COOLOR - paletas de cores aleatorias so prensionar ESPACO para trocar
+
+Fontes
+GOOGLE FONTS
+DA FONTS
