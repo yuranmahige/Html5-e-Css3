@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas dinamicas</title>
+    <style>
+        ul{
+            list-style: none;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        li{
+            position: relative;
+            display: inline;
+            margin-left: 20px;
+            transition: 50ms ease-in-out;
+        }
+        a{
+            font: normal normal 1.5rem Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+        li:hover{
+             font-size: 1.6rem;
+             background-color: aquamarine;
+             border-radius: 5px;
+             padding: 5px;
+             transition: 50ms ease-in-out;
+        }
+        a::after{
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            position:absolute;
+            bottom:0;
+            left: 0;
+            transition: .5s ease-in-out;
+        }
+        a:hover::after{
+           width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

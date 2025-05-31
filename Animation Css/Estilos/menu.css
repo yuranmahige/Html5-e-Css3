@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Configuracoes continuas da animacao anterior de bordas dinamicas */
+ ul{
+            list-style: none;
+            text-align: center;
+            margin-top: 5vh;
+        }
+        li{
+           display: inline-block;
+            position: relative;
+            margin-left: 20px;
+            transition: 50ms ease-in-out;
+        }
+        a{
+            font: normal normal 1.5rem Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+        }
+        li:hover{
+             font-size: 1.6rem;
+             background-color: aquamarine;
+             border-radius: 5px;
+             padding: 5px;
+             transition: 50ms ease-in-out;
+        }
+        a::after{
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: black;
+            position:absolute;
+            bottom:0;
+            left: 0;
+            transition: .5s ease-in-out;
+        }
+        a:hover::after{
+           width: 100%;
+        }
+        /* Fim  */
+        /* Configuracao de menu de burguer */
+        #btn-menu{
+            width: 35px;
+            height: 35px;
+            margin-right: 40px;
+            border-radius: 5px;
+            border: none;
+            background-color: transparent;
+            float: right;
+            cursor: pointer;
+        }
+        .linha{
+            display: block;
+            position: relative;
+            width: 25px;
+            height: 3px;
+            margin: 3px auto;
+            background-color: #585656;
+            transform-origin: center;
+            transition:.07s;
+        }
+        /* Interacao com Js */
+        #btn-menu.burguer:focus{
+            border: 2px solid aquamarine;
+            box-shadow: 0px 0px 3px 0px aqua;
+
+        }
+        #btn-menu.burguer .linha:nth-child(1){
+            transform: translateY(3px) rotate(-45deg);
+            background-color: aquamarine;
+        }
+        #btn-menu.burguer .linha:nth-child(2){
+           display: none;
+        }
+        #btn-menu.burguer .linha:nth-child(3){
+            transform: translateY(-3px) rotate(45deg);
+            background-color: aquamarine;
+        }

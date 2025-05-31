@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu burguer - toggle</title>
+    <link rel="stylesheet" href="EStilos/menu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""> Home</a></li>
+                <li><a href="">Novidades</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+            <button onclick="menu()" id="btn-menu">
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
+            </button>
+        </nav>
+    </header>
+    <script>
+        function menu(){
+            const btn = document.getElementById('btn-menu')
+            btn.classList.toggle('burguer')
+        }
+    </script>
+</body>
+</html>
