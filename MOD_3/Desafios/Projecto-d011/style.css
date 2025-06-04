@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     background: black url('Arquivos/Imagens/espaco.jpg') center center / cover no-repeat fixed;
 }
 .container{
@@ -16,4 +17,18 @@ body{
     transform: translate(-50%,-50%);
     max-width: 300px;
     width: 100%;
+}
+
+/* imagem flutuante*/
+.img{
+    animation: flutuar 10s ease-in-out infinite;
+}
+@keyframes flutuar{
+    0, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-140px);
+    }
+
 }
