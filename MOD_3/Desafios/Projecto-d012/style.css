@@ -72,6 +72,7 @@ header{
 /* FIM */
 
 .fundo{
+    min-height: 50vh;
     color: white;
 }
 .fnd_i{
@@ -82,16 +83,17 @@ header{
 }
 .max{
     max-width: 1200px;
-    margin: auto;
-}
+    padding: 4em;
+    margin: 5em auto;
+} 
 .max > p{
-  padding: 3em;
   font: var(--font_texto);
   line-height: 2em;
 }
 .deco{
-    width:350px;
-    background-color: rgba(0, 0, 0, 0.455);
+   width: fit-content;
+   padding: 7px;
+   background-color: rgba(0, 0, 0, 0.455);
 }
 footer{
     font-size: .9em;
