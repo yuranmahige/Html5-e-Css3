@@ -5,38 +5,38 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Configuracoes continuas da animacao anterior de bordas dinamicas */
-  header{
+/* Configuracoes das bordas dinamicas */
+.header{
         position: absolute;
         width: 100%;
         height: 110px;
         background-color: #800020;
         }
-ul{
+.ul{
     list-style: none;
     text-align: center;
     margin-top: 5vh;
         }
-li{
+.li{
     position: relative;
     display: inline;
     margin-left: 4.2em;
     transition: 80ms ease-in-out;
         }
-a{
+.a{
     font: normal normal 1.5rem Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: white;
         }
-a:hover{  color: rgba(0, 0, 0, 0.859);}
-li:hover{
+.a:hover{  color: rgba(0, 0, 0, 0.859);}
+.li:hover{
         font-size: 1.6rem;
         background-color: aquamarine;
         border-radius: 5px;
         padding: 5px;
         transition: 80ms ease-in-out;
         }
-a::after{
+.a::after{
         content: " ";
         width: 0%;
         height: 2px;
@@ -46,7 +46,7 @@ a::after{
         left: 0;
         transition: .7s ease-in-out;
         }
-a:hover::after{
+.a:hover::after{
            width: 100%;
            background-color: rgba(0, 0, 0, 0.859);
         }
