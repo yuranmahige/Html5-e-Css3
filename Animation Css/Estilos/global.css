@@ -31,8 +31,8 @@
     color: white;
         }
 .a:hover{  color: rgba(0, 0, 0, 0.859);}
-.li:hover{
-        font-size: 1.6rem;
+.li:hover .a{
+        font-size: 1.4rem;
         background-color: aquamarine;
         border-radius: 5px;
         padding: 5px;

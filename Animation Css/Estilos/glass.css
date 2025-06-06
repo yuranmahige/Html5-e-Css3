@@ -1,25 +1,30 @@
 @charset "UTF-8";
 
 body.glass{
+    position: relative;
     width: 100%;
     min-height: 100vh;
     background: black url('../imagens/fundo.jpg') center top / cover no-repeat fixed;
 }
-.content{
+.container{
     max-width: 450px;
     margin: 4em auto;
     padding: 15px;
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.845);
-    border-radius: 8px;
     line-height: 1.3em;
+    color: white;
     background-color: transparent;
     backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.845);
+    border-radius: 8px;
+    overflow: hidden;
 }
+.content{ transition: bottom 5s;}
 h1{
     padding: 15px 0;
     font: italic bold 1.7rem Verdana, Geneva, Tahoma, sans-serif;
 }
-p{
-    font-size: .9rem;
+p{ font-size: .9rem;}
+.container:hover .content{
+    position: relative;
+    top: 200px;
 }
